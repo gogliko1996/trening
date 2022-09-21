@@ -26,10 +26,24 @@
 //         console.log(array[i]);
 //     }
 // }
-let array = [[2, -3, 5, 10],[25,-24, -11, 100],[-6, -7, 10]];
-for(let i=0; i<array.length; i++){
-   if(array[i][0]>0){
-    console.log(array[i] [0]);
 
-   }
+// let array = [
+//     [2, -3, 5, 10],
+//     [25,-24, -11, 100],
+//     [-6, -7, 10]
+// ];
+// for(let i=0; i<array.length; i++){
+//     for(let a=0; a<array[i].length; a++){
+//         if(array[i][a] > 0){
+//             console.log(array[i][a]);
+//         }
+//     }
+// }
+
+let array = [2, 3, 5, 10, 25, 24, 11, 100, 6, 7, 10];
+for(let i=0; i<array.length; i++){
+    if(array[i] % 2 == 0){
+        console.log(array[i]);
+    }
+}
 
