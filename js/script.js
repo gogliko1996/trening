@@ -36,19 +36,19 @@
 
 
 
-//     let user = {
-//         firstname: 'giorgi',
-//         lastname: 'saakadze',
-//         age: 32,
-//         isloggedin: true
-//       }
+    let user = {
+        firstname: 'giorgi',
+        lastname: 'saakadze',
+        age: 32,
+        isloggedin: true
+      }
    
-// function object1 (a, b) {
-//      return a + " " + b;
+function getUsername (a, b) {
+      return a + " " + b;
      
-//  }
-//  let username = object1(user.firstname, user.lastname);
-//  console.log(username);
+ }
+ let username = getUsername(user.firstname, user.lastname);
+ console.log(username);
 
 
 
@@ -79,3 +79,9 @@
 //         console.log(numbers[i]);
 //     }
 // }
+
+
+
+
+
+
