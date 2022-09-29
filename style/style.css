@@ -27,7 +27,7 @@ header {
     cursor: pointer;
 } 
 .lineNone {
-    display: none;
+    visibility: hidden;
 }
 
 .lineBoxClic div,.lineX div {
