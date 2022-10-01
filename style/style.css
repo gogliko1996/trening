@@ -68,3 +68,22 @@ ul {
     margin-left: 50px;
     margin-top: 50px;
 }
+#clicClear {
+    margin:20px 5%;
+    width: 30%;
+}
+.fa-trash {
+    width: 20px;
+    height: 20px;
+    color: rgb(255, 0, 0);
+}
+#naw {
+    margin: 20px 5%;
+}
+.valuetext {
+    font-size: 24px;
+    color: green;
+}
+.fa-delete-left {
+    color: #000000;
+}

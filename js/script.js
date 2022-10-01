@@ -9,53 +9,30 @@ document.getElementById("line2").appendChild(document.createElement("div"));
     document.getElementById("nav").classList.toggle("nav");
     document.getElementById("ul").classList.toggle("ul");
  });
-
-
-
-// let input = document.getElementById("getText");
-
-// input.addEventListener("focus", function(){
-//    input.style.border = "1px solid red";
-// });
-// input.addEventListener("keydown", function(ivent){
-
-// });
-
-// document.getElementById("getText").addEventListener("keydown", function(name) {
-//    name.target.classList.add("goga");
-// });
-
-
-// let ul = document.getElementById("naw");
-// let li = document.createElement("li");
-// li.innerText = "javscript";
-// ul.appendChild(li);
-
 let input = document.getElementById("getText");
-let button = document.getElementById("botton");
+let button = document.getElementById("button");
+let clicclear = document.getElementById("clicClear")
 let div = document.getElementById("naw");
-let form = document.getElementById("form");
 
-
-form.addEventListener("submit", function (v) {
-   v.preventDefault();
-   let value = input.value;
-   let li = document.createElement("li");
-   let clearbottan = document.createElement("span");
-   clearbottan.innerHTML = '<i class="fa-solid fa-delete-left"></i>';
-   clearbottan.addEventListener("click", function () {
-      li.remove();
-   });
-   li.innerText = value;
-   li.appendChild(clearbottan);
-   div.appendChild(li);
-   input.value = " ";
-
+button.addEventListener("click", function () {
+let p = document.createElement("p");
+let value = input.value;
+let delet = document.createElement("span");
+delet.innerHTML = '  <i class="fa-solid fa-delete-left"></i>';
+delet.addEventListener("click", function () {
+   p.remove();
 });
-document.getElementById("clicClear").addEventListener("click", function(){
+clicclear.innerHTML = '<i class="fa-solid fa-trash"></i>';
+p.setAttribute("class", "valuetext");
+p.innerText = value;
+p.appendChild(delet);
+div.appendChild(p);
+input.value = " ";
+});
+clicclear.addEventListener("click", function () {
    div.innerHTML = " ";
-})
-
+   clicclear.innerHTML = " ";
+});
 
 
 
