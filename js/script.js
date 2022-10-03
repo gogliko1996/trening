@@ -9,12 +9,15 @@ document.getElementById("line2").appendChild(document.createElement("div"));
     document.getElementById("nav").classList.toggle("nav");
     document.getElementById("ul").classList.toggle("ul");
  });
+
 let input = document.getElementById("getText");
 let button = document.getElementById("button");
 let clicclear = document.getElementById("clicClear")
 let div = document.getElementById("naw");
+let form = document.getElementById("form");
 
-button.addEventListener("click", function () {
+form.addEventListener("submit", function (name) {
+   name.preventDefault();
 let p = document.createElement("p");
 let value = input.value;
 let delet = document.createElement("span");
